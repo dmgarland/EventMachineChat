@@ -43,7 +43,7 @@ class ChatServer
 
   # The actual evented reactor code
   def start
-    puts "ChatServer starting, listening on #{HOST}:#{port}"
+    puts "ChatServer starting, listening on #{HOST}:#{PORT}"
 
     EventMachine::WebSocket.start(:host => HOST, :port => PORT) do |ws|
       ws.onopen {
