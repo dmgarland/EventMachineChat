@@ -1,0 +1,22 @@
+h1 {
+  margin-bottom: 1em;
+}
+
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+#chat {
+  height: 300px;
+  border: 1px solid #999;
+  padding: 0.5em;
+  font-size: 2em;
+  overflow: scroll;
+  margin-bottom: 1em;
+}
+
+input[type="text"] {
+  height: 30px;
+}

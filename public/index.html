@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chat.js"></script>
+  </head>
+
+  <body>
+    <div id="content" class="span12">
+      <h1>My Amazing Chat Application</h1>
+
+      <div class="row">
+        <form class="span12 form-inline">
+          <fieldset>
+            <label for="handle">Handle:</label>
+            <input type="text" id="handle" name="handle" class="input-medium"
+            placeholder="Your name here" />
+            <input type="button" id="join" value="Join" class="btn btn-info" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="row">
+        <div id="chat" class="span8">
+        </div>
+      </div>
+
+      <div class="row">
+        <form class="span12 form-inline">
+          <fieldset>
+            <select id="command" class="input-small">
+              <option>Say</option>
+            </select>
+            <input type="text" id="msg" name="msg" class="input-xxlarge" />
+            <input type="button" id="send" value="Send" class="btn btn-primary" />
+          </fieldset>
+        </form>
+      </div>
+
+    </div>
+
+  </body>
+</html>
