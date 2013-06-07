@@ -15,7 +15,7 @@ $(document).ready(function(){
   };
 
   $('#msg').blur(function() {
-    ws.send($("#command").val() + $("#msg").val());
+    ws.send($("#command").val() + " " + $("#msg").val());
     $("#msg").val("");
   });
 
