@@ -54,6 +54,15 @@ class ChatServer
     broadcast(msg)
   end
 
+  def handle_hug(ws, args)
+    msg = "No such users"
+    hug = args.join(" ")
+    if clients[1].name.downcase == hug.downcase
+      msg = "#{self.clients[ws].name} hugs #{hug}"
+    end
+
+    broadcast(msg)
+  end
   # The actual evented reactor code
   def start
     puts "ChatServer starting, listening on #{HOST}:#{PORT}"
